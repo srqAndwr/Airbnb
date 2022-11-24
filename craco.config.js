@@ -11,7 +11,7 @@ const CracoLessPlugin = require('craco-less');
 module.exports = {
 	webpack: {
 		output: {
-			publicPath: './',
+			publicPath: '/',
 			path: path.resolve(__dirname, '/dist')
 		},
 		alias: {
