@@ -10,6 +10,10 @@ const path = require('path');
 const CracoLessPlugin = require('craco-less');
 module.exports = {
 	webpack: {
+		output: {
+			publicPath: './',
+			path: path.resolve(__dirname, '/dist')
+		},
 		alias: {
 			'@': path.resolve(__dirname, 'src'),
 			views: path.resolve(__dirname, './src/views/'),
