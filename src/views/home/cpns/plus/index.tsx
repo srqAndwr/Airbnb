@@ -7,7 +7,6 @@
  * @Description:
  */
 import ScrollView from '@/components/scroll-view';
-import Section from '@/components/section';
 import SectionBody from '@/components/section/body';
 import SectionHeader from '@/components/section/header';
 import {plus} from '@/model/types/plus';

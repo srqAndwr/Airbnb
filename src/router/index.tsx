@@ -6,17 +6,11 @@
  * @FilePath: index.tsx
  * @Description:
  */
-import React, { memo, lazy } from 'react';
+import  { lazy } from 'react';
 import {
-	BrowserRouter as Router,
-	Route,
-	Routes,
 	Navigate,
-	RouteProps,
 	RouteObject,
 } from 'react-router-dom';
-import Header from 'components/header/';
-import Footer from 'components/footer/';
 const Home = lazy(() => import('views/home'));
 const Entire = lazy(() => import('views/entire'));
 const Detail = lazy(() => import('views/detail'));
