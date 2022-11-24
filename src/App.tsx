@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Author: shiruiqiang
+ * @Date: 2022-10-13 11:44:26
+ * @LastEditTime: 2022-10-26 11:14:32
+ * @LastEditors: shiruiqiang
+ * @FilePath: App.tsx
+ * @Description:
+ */
+import {routes} from './router';
+import {useRoutes} from 'react-router-dom';
+import Header from './components/header';
+import Footer from './components/footer';
+import {Fragment} from 'react';
+import {useScrollTop} from './hooks/useScrollTop';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	useScrollTop();
+	return (
+		<Fragment>
+			<Header />
+			<div>{useRoutes(routes)}</div>
+			<Footer />
+		</Fragment>
+	);
 }
 
 export default App;
